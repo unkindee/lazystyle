@@ -1,0 +1,54 @@
+/* Fonts */
+
+$genericFont: "Roboto"; //Generic Font used on all pages p, prices
+$genericFontMedium: "Roboto Condensed"; //Generic Font used on all pages p, prices
+$brandFont: "BambusaPro Regular";
+$titleFontBold: "Futura-Bol";
+$heroButton: "Barlow";
+$futuraDem: "Futura-Dem";
+$futuraMed: "Futura-Med";
+$segoeUi: "SegoeUI";
+/*Colors*/
+
+$white: #fff;
+$black: #000;
+$blackCarousel: #191919;
+$bg-gray: #141414;
+$text-gray: #212121;
+$lightFire: #CB5754;
+$p-color: #dfdfdf;
+$input-color : #707070;
+$input-border: #606060;
+$input-border-focus: #B2B2B2;
+/*Footer Colors*/
+
+$footer-bg: #1a1a1a;
+$footer-text: #dfdfdf;
+
+/* Overwrite boostrap variables */
+
+//Menu
+$navbar-dark-color: rgba($white, 1);
+$navbar-light-color: rgba($black, 1);
+$navbar-dark-hover-color: $lightFire;
+$fontSizeBig: 20px;
+.white {
+    background: #fff;
+}
+
+.black {
+    background: #000;
+}
+
+.orange {
+    background: #CB5754
+}
+
+.gray {
+    background: #212121;
+}
+
+.white-border{
+    border:1px solid $white;
+
+}

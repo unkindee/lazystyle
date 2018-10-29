@@ -1,0 +1,201 @@
+.product-page {
+    background: $black;
+    #top-nav {
+        background: $black;
+    }
+    #product-details {
+        padding: 10% 0;
+        .category-meniu {
+            margin-bottom: 1rem;
+            .category-title {
+                text-transform: capitalize;
+                display: inline-block;
+            }
+            p {
+                font-size: 0.8rem;
+            }
+        }
+        .bike-details {
+            padding-top: 3%;
+            padding-left: 5%;
+            h1 {
+                font-family: $futuraDem;
+            }
+            .price {
+                color: $lightFire;
+                margin-bottom: 5px;
+            }
+            .old-price {
+                margin-left: 10px;
+                font-size: 14px; // font-size: calc(1vw + 1vh + 1vmin);
+            }
+            .details {
+                //height: calc(100% - 200px);
+                height: 100px;
+                margin-top: 1rem;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                li {
+                    padding-left: 1em;
+                    text-indent: -.7em;
+                    font-size: 16px;
+                    padding-bottom: 5px;
+                }
+                li::before {
+                    content: "• ";
+                    color: $white;
+                    /* or whatever color you prefer */
+                    ;
+                }
+            }
+            .bike-color {
+                color: $white;
+                margin-top: 30px;
+                margin-bottom: 10px;
+            }
+            .color-circles {
+                margin-bottom: 3rem;
+                li {
+                    border-radius: 50%;
+                    width: 40px;
+                    height: 40px;
+                    margin: 5px;
+                }
+            }
+            .add-to-cart {
+                margin-right: 1.5rem;
+                padding: 18px 80px;
+            }
+            .add-to-fav {
+                margin-right: 1.5rem;
+                padding: 18px 20px;
+                background: $bg-gray;
+                color: $lightFire;
+                border: 2px solid $lightFire;
+                color: $white;
+            }
+            .delivery-informations {
+                margin-top: 3rem;
+                strong {
+                    margin-left: 10px;
+                }
+                li {
+                    font-size: 16px;
+                    padding-bottom: 5px;
+                }
+            }
+        }
+        @include media-breakpoint-down(sm) {
+            padding-top: 9rem;
+            .add-to-cart {
+                margin-bottom: 1.5rem;
+            }
+            .details {
+                //height: calc(100% - 200px);
+                height: auto !important
+            }
+        }
+    }
+    #tehnical-details {
+        background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url(../Images/big-bike-product-page-bg.jpg) no-repeat center center fixed;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        padding: 4em 0;
+        padding: 10em 0;
+        background-position: 1% 90%;
+        div {
+            color: $white;
+            font-size: 1rem;
+            font-weight: normal;
+        }
+        h2 {
+            font-family: $futuraDem;
+        }
+        .tehical-sub-title {
+            padding-top: 1rem;
+            padding-bottom: 3.8rem;
+        }
+        .wrap-option {
+            padding-bottom: 0.9rem;
+        }
+        .option {
+            font-weight: 400;
+            font-size: 0.8rem;
+            padding: 3px 0;
+            color: #ccc;
+        }
+        .customize {
+            // padding: 16px 17px 17px 17px;
+        }
+        @include media-breakpoint-down(xs) {
+            .row div {
+                text-align: center;
+            }
+        }
+    }
+    #review-carousel {
+        padding: 3% 0;
+        background-color: $blackCarousel;
+        h2 {
+            font-family: $segoeUi, $genericFont;
+            ;
+        }
+        h3 {
+            font-family: $brandFont;
+            font-size: 1.2rem;
+        }
+        .carousel-item {
+            min-height: 300px !important;
+        }
+        img {
+            width: 80px;
+        }
+        @include media-breakpoint-down(xs) {
+            #review-carousel h2 {
+                font-size: 1rem;
+            }
+            .carousel-caption {
+                top: 5%;
+            }
+            .carousel-item {
+                min-height: 400px !important;
+            }
+        }
+    }
+    #customize-info {
+        // background: #000;
+        // background-image: url("../Images/mud.png");
+        // background-size: auto;
+        // background-repeat: repeat-x, no-repeat;
+        // background-position-y: 80%;
+        background-image: url(../Images/mud.png), url(../Images/medium-brush.png); // background-size: auto 35%, auto;
+        //background-position: top, 85% 73%,38% 100%;
+        background-position: right bottom -80%, right bottom 34%;
+        background-repeat: repeat-x, no-repeat;
+        padding: 7% 0;
+        h2 {
+            padding: 1rem 0;
+            font-family: $futuraDem;
+        }
+        div {
+            color: $white;
+            font-size: 1rem;
+            font-weight: normal;
+        }
+        .second-bicycles {
+            margin-top: 5%;
+        }
+    }
+    footer {
+        background: #0F0F0F;
+    }
+
+
+    @include media-breakpoint-down(xs) {
+        .navbar-nav {
+            background: $black;
+        }
+    }
+}

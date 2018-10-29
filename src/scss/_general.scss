@@ -1,0 +1,53 @@
+/* General Styling */
+
+body {
+    background-color: $bg-gray;
+    font-family: $segoeUi, $genericFont;
+}
+
+h1,
+h2,
+h3 {
+    color: $white;
+}
+
+h1,
+h2 {
+    font-family: $brandFont;
+    font-weight: normal;
+}
+
+h1{
+    line-height: 50px;
+}
+
+h3 {
+    font-size: 34px;
+    font-family: $futuraDem;
+    font-weight: 700;
+    line-height: 34px;
+}
+
+p {
+    font-family: $genericFont;
+    color: $p-color;
+    line-height: 1.5;
+    font-size: 18px;
+    margin-bottom: 0;
+    font-weight: 300;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    li {
+        color: $footer-text;
+        font-size: 14px;
+        font-family: $futuraMed;
+    }
+}
+
+.container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+}

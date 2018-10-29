@@ -1,0 +1,31 @@
+.read-more-state {
+    display: none;
+    &:checked~.read-more-wrap .read-more-target {
+        opacity: 1;
+        font-size: inherit;
+        max-height: 999em;
+    }
+    &~.read-more-trigger:before {
+        content: 'Read more';
+    }
+    &:checked~.read-more-trigger:before {
+        content: 'Read less';
+    }
+}
+
+.read-more-target {
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+    transition: .25s ease;
+}
+
+.read-more-trigger {
+    cursor: pointer;
+    display: inline-block;
+    color: $lightFire;
+    margin-bottom: 0;
+    margin-top: 16px;
+    font-size: $fontSizeBig;
+    font-weight: 300;
+}

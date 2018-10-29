@@ -1,0 +1,42 @@
+.animate-images {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    right: 15px;
+    img {
+        position: absolute;
+        top: 0;
+        opacity: 0;
+        animation: fadeinout 18s infinite;
+    }
+}
+
+div img:nth-child(1) {
+    animation-delay: -2s;
+}
+
+div img:nth-child(2) {
+    animation-delay: 4s;
+}
+
+div img:nth-child(3) {
+    animation-delay: 10s;
+}
+
+@keyframes fadeinout {
+    0% {
+        opacity: 0;
+    }
+    11.11111111111111% {
+        opacity: 1;
+    }
+    33.33333333333333% {
+        opacity: 1;
+    }
+    44.44444444444444% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}

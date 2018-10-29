@@ -1,0 +1,38 @@
+/* Import Boostrap */
+
+
+/* Load own variables before bootsrap variables*/
+
+@import "_own-variables";
+
+/* @import '../../node_modules/bootstrap/scss/bootstrap.scss'; */ //whole bootstrap
+// Required
+@import "../../node_modules/bootstrap/scss/_functions";
+@import "../../node_modules/bootstrap/scss/_variables.scss";
+@import "../../node_modules/bootstrap/scss/_mixins";
+// Optional
+@import "../../node_modules/bootstrap/scss/_grid";
+@import "../../node_modules/bootstrap/scss/_images";
+@import "../../node_modules/bootstrap/scss/_reboot.scss";
+@import "../../node_modules/bootstrap/scss/utilities/_display.scss";
+@import "../../node_modules/bootstrap/scss/utilities/_flex.scss";
+@import "../../node_modules/bootstrap/scss/utilities/_text.scss";
+// boostrap nav
+@import "../../node_modules/bootstrap/scss/_nav.scss";
+@import "../../node_modules/bootstrap/scss/_navbar.scss";
+@import "../../node_modules/bootstrap/scss/_transitions.scss";
+@import "../../node_modules/bootstrap/scss/utilities/_position.scss";
+
+/* FontAwesome */
+
+@import "../../node_modules/font-awesome/scss/font-awesome.scss";
+
+/* Import Custom Files */
+
+@import "custom-fonts";
+@import "components/_buttons.scss";
+@import "components/_read-more.scss";
+@import "_general.scss";
+@import "_homepage.scss";
+@import "components/_image-transitions.scss";
+@import "_product-page.scss";
